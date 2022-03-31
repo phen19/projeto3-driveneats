@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.container {
+    width: 414px;
+    height: 1026px;
+    background-color: #E5E5E5;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.topo{
+    background-color: #CF2B2B;
+    height: 92px;
+    padding-left: 21px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 100;
+    top: 0;
+    width: 414px;
+    box-sizing: border-box;
+}
+
+.topo h1{
+    font-family: 'Righteous', cursive;
+    font-size: 44px;
+    color: #FFFFFF;
+}
+
+.topo h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.conteudo{
+    margin-top: 123px;
+    margin-bottom: 108px;
+}
+.menu{
+    padding-left: 19px;
+    margin-top: 27px;
+}
+
+.menu h1{
+    font-family: 'Righteous', cursive;
+    font-size: 26px;
+    color: #333333;
+}
+
+.conteudo-menu{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.conteudo-menu ::-webkit-scrollbar{
+    display: none;
+}
+
+.item-menu{
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    margin-top: 17px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 16px;
+}
+
+.item-menu h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.item-menu h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight:lighter;
+    font-size: 14px;
+    color: #a6a6a6
+}
+
+.item-menu h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    height: 92px;
+    position: fixed;
+    bottom: 0;
+    width: 414px;
+}
+
+.botao{
+    background-color: #CBCBCB;
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+@media (max-width: 414px) {
+   
+.container{
+    width: 100%;
+}
+
+.bottom{
+    width: 100%;
+}
+}
+
+.imagem{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
