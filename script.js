@@ -23,3 +23,14 @@ function escolherSobremesa(sobremesaSelecionada){
     sobremesaSelecionada.classList.add("selecionado");
 }
 
+function tresSelecionados(){
+    let check1 = document.querySelector(".conteudo-prato .selecionado");
+    let check2 = document.querySelector(".conteudo-bebida .selecionado");
+    let check3 = document.querySelector(".conteudo-sobremesa .selecionado");
+    let botao = document.querySelector(".botao");
+
+    if (check1 !== null && check2 !== null && check3 !== null){
+        botao.classList.add("pedido-feito");
+        botao.innerHTML = "Fechar pedido";
+    }
+}
